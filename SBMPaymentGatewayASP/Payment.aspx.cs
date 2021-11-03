@@ -27,7 +27,7 @@ namespace SBMPaymentGatewayASP
                 OrderStatusRequest osr = new OrderStatusRequest();
                 osr.SetOrderId("98a8bfe7-fd3d-443e-b218-112c4749645c");
                 osr.SetLanguage(@"en");
-                OrderStatusResponse osResp = p.GetOrderStatus(osr); //Thow exception when card is declined
+                OrderStatusResponse osResp = p.GetOrderStatus(osr); //Thow exception when transaction is declined
 
                 lbl_order_status.Text = "Order Status: " + osResp.GetOrderStatus().ToString();
                 lbl_action_code.Text = "Action Code: " + osResp.GetActionCode().ToString();
