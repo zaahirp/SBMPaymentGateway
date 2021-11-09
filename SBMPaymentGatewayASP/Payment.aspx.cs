@@ -25,7 +25,7 @@ namespace SBMPaymentGatewayASP
             try
             {
                 OrderStatusRequest osr = new OrderStatusRequest();
-                osr.SetOrderId("98a8bfe7-fd3d-443e-b218-112c4749645c");
+                osr.SetOrderId("eb7ba6cb-b179-4514-8f85-5dfd4a6eb170");
                 osr.SetLanguage(@"en");
                 OrderStatusResponse osResp = p.GetOrderStatus(osr); //Thow exception when transaction is declined
 
@@ -49,7 +49,7 @@ namespace SBMPaymentGatewayASP
             //var orderNo = new Guid().ToString();
             rr.SetMerchantOrderNumber(@"7"); //Order number cannot be the same //we should generate same
 
-            rr.SetAmount(@"1"); //in cent
+            rr.SetAmount(@"1"); //in cent (Rs 1 - 100 cents)
             rr.SetLanguage(@"en");
             rr.SetReturnUrl(@"https://localhost:44350/Response.aspx");
             rr.SetDescription(@"This is my first Order");
