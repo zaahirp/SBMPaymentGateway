@@ -13,6 +13,7 @@ namespace SBMPaymentGatewayASP
     public partial class Payment : System.Web.UI.Page
     {
         public Plugin p;
+        private string orderNo;
 
         public Payment()
         {
@@ -22,6 +23,9 @@ namespace SBMPaymentGatewayASP
         }
         protected void Page_Load(object sender, EventArgs e)
         {
+            orderNo = "NLTA_" + DateTime.Now.ToString("yyyy-MM-ddThh.mm.ss.ffffff");
+            lbl_order_no.Text = "Order No: " + orderNo;
+
             try
             {
                 OrderStatusRequest osr = new OrderStatusRequest();
@@ -47,7 +51,7 @@ namespace SBMPaymentGatewayASP
             rr.SetCurrency(@"480"); //ISO-4217 Currency (MUR - 480)
 
             //var orderNo = new Guid().ToString();
-            rr.SetMerchantOrderNumber(@"7"); //Order number cannot be the same //we should generate same
+            rr.SetMerchantOrderNumber(orderNo); //Order number cannot be the same //we should generate same
 
             rr.SetAmount(@"1"); //in cent (Rs 1 - 100 cents)
             rr.SetLanguage(@"en");

@@ -13,6 +13,8 @@
             <asp:Label ID="lbl_action_code" runat="server" Text="Action Code: "></asp:Label><br />
             <asp:Label ID="lbl_description" runat="server" Text="Description: "></asp:Label>
             <br />
+            <asp:Label ID="lbl_order_no" runat="server" Text=""></asp:Label>
+            <br />
             <asp:Button ID="btn_payment" Text="Make Payment" OnClick="btn_payment_Click" runat="server" />
         </div>
     </form>

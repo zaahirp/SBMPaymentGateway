@@ -51,6 +51,15 @@ namespace SBMPaymentGatewayASP
         protected global::System.Web.UI.WebControls.Label lbl_description;
 
         /// <summary>
+        /// lbl_order_no control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_order_no;
+
+        /// <summary>
         /// btn_payment control.
         /// </summary>
         /// <remarks>
