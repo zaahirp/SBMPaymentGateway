@@ -19,7 +19,8 @@
             <asp:Label ID="lbl_action_code" runat="server" Text=""></asp:Label><br />
             <asp:Label ID="lbl_eci" runat="server" Text=""></asp:Label><br />
             <asp:Label ID="lbl_cvv_validation_result" runat="server" Text=""></asp:Label><br />
-            <asp:Label ID="lbl_order_status" runat="server" Text=""></asp:Label>
+            <asp:Label ID="lbl_order_status" runat="server" Text=""></asp:Label><br />
+            <asp:Label ID="lbl_amount" runat="server" Text=""></asp:Label>
         </div>
     </form>
 </body>

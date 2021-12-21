@@ -21,6 +21,7 @@ namespace SBMPaymentGatewayASP
             lbl_eci.Text = "ECI: " + Request.QueryString["eci"];
             lbl_cvv_validation_result.Text = "CVV Validation Result: " + Request.QueryString["cvvValidationResult"];
             lbl_order_status.Text = "Order Status: " + Request.QueryString["OrderStatus"];
+            lbl_amount.Text = "Amount: " + Request.QueryString["Amount"];
         }
     }
 }
